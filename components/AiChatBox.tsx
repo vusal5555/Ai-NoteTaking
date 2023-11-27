@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { useChat } from "ai/react";
-import { Bot, Divide, Trash, XCircle } from "lucide-react";
+import { Bot, Trash, XCircle } from "lucide-react";
 import React, { useEffect, useRef } from "react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
@@ -77,8 +77,7 @@ const AiChatBox = ({ open, onClose }: AiChatBoxProps) => {
           {!error && messages.length === 0 && (
             <div className="flex h-full items-center justify-center gap-3">
               <Bot></Bot>
-              Ask the AI for specific information in your notes <br /> e.g "What
-              is my wifi password"
+              Ask the AI for specific information in your notes
             </div>
           )}
         </div>
