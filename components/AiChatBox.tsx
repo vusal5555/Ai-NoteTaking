@@ -77,7 +77,8 @@ const AiChatBox = ({ open, onClose }: AiChatBoxProps) => {
           {!error && messages.length === 0 && (
             <div className="flex h-full items-center justify-center gap-3">
               <Bot></Bot>
-              Ask the AI for specific information in your notes
+              Ask the AI for specific information in your notes e.g "What is my
+              wifi password"
             </div>
           )}
         </div>
